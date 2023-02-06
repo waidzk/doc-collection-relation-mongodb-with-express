@@ -1,0 +1,29 @@
+GET http://localhost:5000/categories
+
+###
+GET http://localhost:5000/houses
+
+###
+GET http://localhost:5000/categories/63e0ffb9bf9471e1154205b7
+
+###
+GET http://localhost:5000/houses/id
+
+###
+POST http://localhost:5000/categories/
+Content-Type: application/json
+
+{
+    "name" : "Jakarta",
+    "description" : "lorem ipsum dolor amet"
+}
+
+###
+POST http://localhost:5000/houses/
+Content-Type: application/json
+
+{
+    "name" : "Icha House",
+    "place" : "Dago",
+    "categoryId" : "63e107976506ffa80fc975ae"
+}
